@@ -1,0 +1,70 @@
+object Form1: TForm1
+  Left = 318
+  Height = 686
+  Top = 74
+  Width = 992
+  BorderStyle = bsDialog
+  Caption = 'Form1'
+  ClientHeight = 686
+  ClientWidth = 992
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  LCLVersion = '2.0.6.0'
+  object Shape1: TShape
+    Left = 400
+    Height = 32
+    Top = 320
+    Width = 32
+    Shape = stCircle
+  end
+  object Shape2: TShape
+    Left = 461
+    Height = 26
+    Top = 632
+    Width = 129
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 30
+    Top = 8
+    Width = 62
+    Caption = 'Score :'
+    Font.Height = 30
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 229
+    Height = 1
+    Top = 311
+    Width = 1
+    Font.Height = 100
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label2Click
+  end
+  object Button1: TButton
+    Left = 160
+    Height = 67
+    Top = 408
+    Width = 147
+    Caption = 'Start'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 568
+    Height = 67
+    Top = 408
+    Width = 147
+    Caption = 'End'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object Timer1: TTimer
+    Interval = 100
+    OnTimer = Timer1Timer
+    left = 100
+    top = 63
+  end
+end
